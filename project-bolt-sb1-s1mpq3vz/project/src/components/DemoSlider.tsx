@@ -8,7 +8,7 @@ export default function DemoSlider() {
     {
       title: "Teacher Dashboard",
       description: "A comprehensive dashboard designed for teachers to monitor and track all students in their classroom. Get real-time insights into student progress, engagement levels, and learning outcomes across all financial modules.",
-      image: "/project/public/assets/Frame 20 (1).png",
+      image: "/assets/Frame 20 (1).png",
       features: ["Student progress tracking", "Classroom overview", "Performance analytics", "Engagement metrics"]
     },
     {
