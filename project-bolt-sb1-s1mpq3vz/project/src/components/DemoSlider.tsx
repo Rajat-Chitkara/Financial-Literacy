@@ -8,25 +8,25 @@ export default function DemoSlider() {
     {
       title: "Teacher Dashboard",
       description: "A comprehensive dashboard designed for teachers to monitor and track all students in their classroom. Get real-time insights into student progress, engagement levels, and learning outcomes across all financial modules.",
-      image: "/src/assets/Frame 29 (2).png",
+      image: "/public/assets/Frame 29 (2).png",
       features: ["Student progress tracking", "Classroom overview", "Performance analytics", "Engagement metrics"]
     },
     {
       title: "Financial DNA Report",
       description: "Generated at the end of every month based on student gameplay, this comprehensive report provides a complete financial profile summary. It analyzes student behavior patterns and financial decision-making skills.",
-      image: "/src/assets/Frame 24 (1).png",
+      image: "/public/assets/Frame 24 (1).png",
       features: ["Monthly behavior analysis", "Financial profile summary", "Decision pattern insights", "Personalized recommendations"]
     },
     {
       title: "Life Simulation Gameplay",
       description: "Immersive life simulation covering all major financial decisions throughout life. Students navigate real-world scenarios from budgeting and investing to major purchases, loans, and retirement planning.",
-      image: "/src/assets/Frame 21 (2).png",
+      image: "/public/assets/Frame 21 (2).png",
       features: ["Life-stage scenarios", "Major financial decisions", "Real-world simulations", "Comprehensive financial planning"]
     },
     {
       title: "Student Dashboard",
       description: "Personalized student dashboard where learners can track their progress, view achievements, and continue their financial learning journey. Gamified elements keep students engaged and motivated.",
-      image: "/src/assets/Frame 20 (1).png",
+      image: "/public/assets/Frame 20 (1).png",
       features: ["Progress tracking", "Achievement system", "Learning path visualization", "Gamified experience"]
     }
   ];
