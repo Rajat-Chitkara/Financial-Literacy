@@ -5,7 +5,7 @@ export default function Pricing() {
   const plans = [
     {
       name: "Classroom",
-      price: "₹2,400",
+      price: "₹3,000",
       period: "per month",
       description: "Perfect for individual teachers and small classrooms",
       icon: Users,
@@ -21,7 +21,7 @@ export default function Pricing() {
     },
     {
       name: "School",
-      price: "₹8,200",
+      price: "₹10,000",
       period: "per month",
       description: "Ideal for schools and departments",
       icon: Building,
