@@ -12,7 +12,11 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
-            <BookOpen className="w-8 h-8 text-blue-600" />
+            <img
+              src="/public/assets/image 12.png"
+              alt="FinSim Logo"
+              className="w-8 h-8"
+            />
             <span className="text-2xl font-bold text-gray-900">FinSim</span>
           </div>
           
