@@ -13,7 +13,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <img
-              src="/assets/image 12.png"
+              src="/assets/Group 3.png"
               alt="FinSim Logo"
               className="w-8 h-8"
             />
