@@ -16,18 +16,26 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-slide-up-delay">
-            <button
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg"
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-            >
-              Contact Us
-            </button>
-          </div>
+  <button
+    className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg"
+    onClick={() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+  >
+    Contact Us
+  </button>
+  <a
+    href="https://quiet-sprinkles-0c1ef8.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center"
+  >
+    Try Demo
+  </a>
+</div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 animate-stagger-in">
             <div className="text-center">
