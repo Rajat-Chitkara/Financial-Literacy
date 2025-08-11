@@ -21,7 +21,7 @@ export default function ContactUs() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Email</h4>
-                <p className="text-gray-600">info@financialliteracy.com</p>
+                <p className="text-gray-600">chitkararajat24@gmail.com</p>
                 <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
               </div>
             </div>
@@ -32,8 +32,8 @@ export default function ContactUs() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Phone</h4>
-                <p className="text-gray-600">+91 98765 43210</p>
-                <p className="text-sm text-gray-500">Mon-Fri, 9 AM - 6 PM IST</p>
+                <p className="text-gray-600">+91 90417 11631</p>
+                <p className="text-sm text-gray-500">Mon-Fri, 11 AM - 6 PM IST</p>
               </div>
             </div>
 
@@ -43,8 +43,8 @@ export default function ContactUs() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Office</h4>
-                <p className="text-gray-600">123 Education Street</p>
-                <p className="text-gray-600">Mumbai, Maharashtra 400001</p>
+                <p className="text-gray-600">Chandigarh</p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
 
@@ -54,8 +54,8 @@ export default function ContactUs() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Business Hours</h4>
-                <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM</p>
+                <p className="text-gray-600">Monday - Friday: 11:00 AM - 6:00 PM</p>
+                <p className="text-gray-600">Saturday: 11:00 AM - 2:00 PM</p>
                 <p className="text-sm text-gray-500">Closed on Sundays and Public Holidays</p>
               </div>
             </div>
