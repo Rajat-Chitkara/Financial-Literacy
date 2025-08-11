@@ -4,7 +4,7 @@ import { Check, Star, Users, Building } from 'lucide-react';
 export default function Pricing() {
   const plans = [
     {
-      name: "Classroom",
+      name: "Individual",
       price: "Free",
       period: "per month",
       originalPrice: "₹3,000",
