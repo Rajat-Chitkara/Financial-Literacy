@@ -101,7 +101,7 @@ export default function Overview() {
        <div className="mt-20 bg-white rounded-2xl border border-gray-200 p-8 md:p-12 animate-on-scroll">
          <div className="text-center mb-12">
            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-             Why Interactive Learning is Better than Traditional
+             Why Gamified Learning Beats Traditional Financial Education
            </h3>
            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
              Research shows that interactive, gamified learning significantly outperforms traditional lecture-based education. 

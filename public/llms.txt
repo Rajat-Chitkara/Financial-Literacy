@@ -1,0 +1,24 @@
+# FinSim
+
+> FinSim is a gamified financial literacy platform for students. It teaches financial
+> knowledge, behavior, attitude and skills through an interactive financial simulation
+> game with engaging gameplay and student progress tracking.
+
+FinSim is aimed at schools, colleges and educators who want to deliver financial
+education without dry lectures. Students move through interactive financial modules
+inside a simulation, and instructors can track student progress.
+
+## Key details
+
+- Product: FinSim, a financial simulation game for financial literacy education
+- Audience: students, schools, colleges, educators
+- Delivery: web-based, no installation required
+- Core areas: financial knowledge, financial behavior, financial attitude, financial skills
+
+## Pages
+
+- [Home](https://finsimlabs.com/): overview, interactive demo, pricing and contact.
+
+## Contact
+
+- Email: chitkararajat24@gmail.com
