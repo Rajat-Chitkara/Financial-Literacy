@@ -80,7 +80,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
               </a>
             ))}
             <a
-              href="https://quiet-sprinkles-0c1ef8.netlify.app/"
+              href="https://finsim-navy.vercel.app/#/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-600 transition-colors"
@@ -121,7 +121,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
               </a>
             ))}
             <a
-              href="https://quiet-sprinkles-0c1ef8.netlify.app/"
+              href="https://finsim-navy.vercel.app/#/"
               target="_blank"
               rel="noopener noreferrer"
               className="block py-2 text-gray-700 hover:text-blue-600"

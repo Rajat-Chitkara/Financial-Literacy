@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const EMAIL = 'chitkararajat24@gmail.com';
 const PHONE_DISPLAY = '+91 90417 11631';
 const PHONE_HREF = 'tel:+919041711631';
-const DEMO_URL = 'https://quiet-sprinkles-0c1ef8.netlify.app/';
+const DEMO_URL = 'https://finsim-navy.vercel.app/#/';
 
 export default function Footer() {
   const productLinks = [
