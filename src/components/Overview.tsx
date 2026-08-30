@@ -1,34 +1,64 @@
 import React from 'react';
-import { Brain, Target, Users, BarChart3 } from 'lucide-react';
+import { Brain, Target, Users, BarChart3, X, Check } from 'lucide-react';
 
 export default function Overview() {
   const features = [
     {
       icon: Brain,
-      title: "Financial Knowledge",
-      description: "Comprehensive curriculum covering budgeting, investing, loans, and financial planning fundamentals."
+      title: 'Financial Knowledge',
+      description: 'Comprehensive curriculum covering budgeting, investing, loans, and financial planning fundamentals.'
     },
     {
       icon: Target,
-      title: "Financial Behavior",
-      description: "Develop healthy financial habits through simulated real-world scenarios and decision-making exercises."
+      title: 'Financial Behavior',
+      description: 'Develop healthy financial habits through simulated real-world scenarios and decision-making exercises.'
     },
     {
       icon: Users,
-      title: "Financial Attitude",
-      description: "Build confidence and positive attitudes towards money management and financial responsibility."
+      title: 'Financial Attitude',
+      description: 'Build confidence and positive attitudes towards money management and financial responsibility.'
     },
     {
       icon: BarChart3,
-      title: "Financial Skills",
-      description: "Practice practical skills like budgeting, investment analysis, and financial goal setting."
+      title: 'Financial Skills',
+      description: 'Practice practical skills like budgeting, investment analysis, and financial goal setting.'
     }
   ];
 
+  const outcomes = [
+    { value: '85%', label: 'Student Engagement' },
+    { value: '92%', label: 'Knowledge Retention' },
+    { value: '78%', label: 'Behavior Improvement' },
+    { value: '96%', label: 'Teacher Satisfaction' }
+  ];
+
+  const traditional = [
+    { term: 'Passive Learning', detail: 'Students listen but do not actively engage' },
+    { term: 'Abstract Concepts', detail: 'Financial concepts remain theoretical' },
+    { term: 'Limited Retention', detail: 'Information is quickly forgotten' },
+    { term: 'No Real Practice', detail: 'Students cannot practice decision-making safely' }
+  ];
+
+  const finsim = [
+    { term: 'Active Participation', detail: 'Students make decisions and see consequences' },
+    { term: 'Real-World Application', detail: 'Practical scenarios mirror actual financial situations' },
+    { term: 'Enhanced Memory', detail: 'Learning through experience creates lasting memories' },
+    { term: 'Safe Environment', detail: 'Risk-free practice builds confidence' }
+  ];
+
+  const research = [
+    { value: '75%', color: 'text-green-600', label: 'Higher retention rate with interactive learning' },
+    { value: '3x', color: 'text-blue-600', label: 'More engagement than traditional methods' },
+    { value: '90%', color: 'text-purple-600', label: 'Students prefer gamified learning' }
+  ];
+
   return (
-    <section id="overview" className="py-20 bg-white scroll-animate">
+    <section id="overview" className="py-20 bg-slate-50 border-b border-gray-200 scroll-animate">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-on-scroll">
+          <span className="inline-block text-blue-600 font-semibold text-sm uppercase tracking-wider mb-3">
+            The Four Pillars
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Comprehensive Financial Education
           </h2>
@@ -37,168 +67,123 @@ export default function Overview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-on-scroll stagger-children">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-on-scroll stagger-children">
           {features.map((feature, index) => (
-            <div key={index} className="text-center group hover:transform hover:scale-105 transition-all duration-300 animate-fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-shadow">
-                <feature.icon className="w-10 h-10 text-blue-600" />
+            <div
+              key={index}
+              className="group bg-white rounded-2xl border border-gray-200 p-6 text-center hover:border-blue-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
+                <feature.icon className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900">{feature.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 text-white animate-on-scroll">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        {/* Why it matters */}
+        <div className="mt-20 bg-blue-600 rounded-2xl p-8 md:p-12 text-white animate-on-scroll">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Why Financial Literacy Matters
-              </h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Why Financial Literacy Matters</h3>
               <p className="text-blue-100 mb-6 leading-relaxed">
-                Studies show that students with strong financial literacy are more likely to make informed financial decisions, 
-                avoid debt, and build wealth throughout their lives. FinSim makes this critical education engaging and effective.
+                Studies show that students with strong financial literacy are more likely to make informed financial
+                decisions, avoid debt, and build wealth throughout their lives. FinSim makes this critical education
+                engaging and effective.
               </p>
               <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Improved financial decision-making skills</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Better preparation for adult financial responsibilities</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <span>Increased confidence in money management</span>
-                </div>
+                {[
+                  'Improved financial decision-making skills',
+                  'Better preparation for adult financial responsibilities',
+                  'Increased confidence in money management'
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-200 flex-shrink-0 mt-0.5" />
+                    <span className="text-blue-50">{item}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="text-center animate-counter">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <div className="text-3xl md:text-4xl font-bold mb-2">85%</div>
-                  <div className="text-blue-100">Student Engagement</div>
+
+            <div className="grid grid-cols-2 gap-px bg-blue-500 rounded-xl overflow-hidden animate-counter">
+              {outcomes.map((outcome) => (
+                <div key={outcome.label} className="bg-blue-600 p-6 text-center">
+                  <div className="text-3xl md:text-4xl font-bold mb-1">{outcome.value}</div>
+                  <div className="text-blue-100 text-sm">{outcome.label}</div>
                 </div>
-                <div>
-                  <div className="text-3xl md:text-4xl font-bold mb-2">92%</div>
-                  <div className="text-blue-100">Knowledge Retention</div>
-                </div>
-                <div>
-                  <div className="text-3xl md:text-4xl font-bold mb-2">78%</div>
-                  <div className="text-blue-100">Behavior Improvement</div>
-                </div>
-                <div>
-                  <div className="text-3xl md:text-4xl font-bold mb-2">96%</div>
-                  <div className="text-blue-100">Teacher Satisfaction</div>
-                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Traditional vs FinSim */}
+        <div className="mt-20 animate-on-scroll">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Why Gamified Learning Beats Traditional Financial Education
+            </h3>
+            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Research shows that interactive, gamified learning significantly outperforms traditional lecture-based
+              education. FinSim leverages these proven methodologies to create lasting financial literacy.
+            </p>
+          </div>
+
+          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+            <div className="rounded-2xl border border-red-200 bg-red-50 p-6 md:p-8 animate-slide-in-left">
+              <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                  <X className="w-4 h-4 text-red-600" />
+                </span>
+                Traditional Learning
+              </h4>
+              <div className="space-y-5">
+                {traditional.map((item) => (
+                  <div key={item.term}>
+                    <p className="font-medium text-gray-900">{item.term}</p>
+                    <p className="text-gray-600 text-sm mt-0.5">{item.detail}</p>
+                  </div>
+                ))}
               </div>
+            </div>
+
+            {/* centre divider */}
+            <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-gray-200 shadow-md items-center justify-center">
+              <span className="text-xs font-bold text-gray-400 uppercase">vs</span>
+            </div>
+
+            <div className="rounded-2xl border border-green-200 bg-green-50 p-6 md:p-8 animate-slide-in-right">
+              <h4 className="text-lg font-semibold text-gray-900 mb-6 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-4 h-4 text-green-600" />
+                </span>
+                FinSim Interactive
+              </h4>
+              <div className="space-y-5">
+                {finsim.map((item) => (
+                  <div key={item.term}>
+                    <p className="font-medium text-gray-900">{item.term}</p>
+                    <p className="text-gray-600 text-sm mt-0.5">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-gray-200 bg-white p-8">
+            <h4 className="text-center text-lg font-semibold text-gray-900 mb-8">Research-Backed Results</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-counter">
+              {research.map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <div className={`text-3xl font-bold mb-1 ${stat.color}`}>{stat.value}</div>
+                  <div className="text-sm text-gray-600 max-w-xs mx-auto">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
-
-       <div className="mt-20 bg-white rounded-2xl border border-gray-200 p-8 md:p-12 animate-on-scroll">
-         <div className="text-center mb-12">
-           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-             Why Gamified Learning Beats Traditional Financial Education
-           </h3>
-           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-             Research shows that interactive, gamified learning significantly outperforms traditional lecture-based education. 
-             FinSim leverages these proven methodologies to create lasting financial literacy.
-           </p>
-         </div>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-           <div>
-             <h4 className="text-xl font-semibold text-gray-900 mb-6">Traditional Learning Challenges</h4>
-             <div className="space-y-4 animate-slide-in-left">
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Passive Learning:</span>
-                   <span className="text-gray-600 ml-1">Students listen but don't actively engage</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Abstract Concepts:</span>
-                   <span className="text-gray-600 ml-1">Financial concepts remain theoretical</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Limited Retention:</span>
-                   <span className="text-gray-600 ml-1">Information is quickly forgotten</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">No Real Practice:</span>
-                   <span className="text-gray-600 ml-1">Students can't practice decision-making safely</span>
-                 </div>
-               </div>
-             </div>
-           </div>
-
-           <div>
-             <h4 className="text-xl font-semibold text-gray-900 mb-6">FinSim Interactive Advantages</h4>
-             <div className="space-y-4 animate-slide-in-right">
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Active Participation:</span>
-                   <span className="text-gray-600 ml-1">Students make decisions and see consequences</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Real-World Application:</span>
-                   <span className="text-gray-600 ml-1">Practical scenarios mirror actual financial situations</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Enhanced Memory:</span>
-                   <span className="text-gray-600 ml-1">Learning through experience creates lasting memories</span>
-                 </div>
-               </div>
-               <div className="flex items-start gap-3">
-                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                 <div>
-                   <span className="font-medium text-gray-900">Safe Environment:</span>
-                   <span className="text-gray-600 ml-1">Risk-free practice builds confidence</span>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <div className="mt-12 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-6 animate-on-scroll">
-           <div className="text-center">
-             <h5 className="text-lg font-semibold text-gray-900 mb-3">Research-Backed Results</h5>
-             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-counter">
-               <div>
-                 <div className="text-2xl font-bold text-green-600 mb-1">75%</div>
-                 <div className="text-sm text-gray-600">Higher retention rate with interactive learning</div>
-               </div>
-               <div>
-                 <div className="text-2xl font-bold text-blue-600 mb-1">3x</div>
-                 <div className="text-sm text-gray-600">More engagement than traditional methods</div>
-               </div>
-               <div>
-                 <div className="text-2xl font-bold text-purple-600 mb-1">90%</div>
-                 <div className="text-sm text-gray-600">Students prefer gamified learning</div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
     </section>
   );
 }

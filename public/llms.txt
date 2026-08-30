@@ -17,7 +17,7 @@ inside a simulation, and instructors can track student progress.
 
 ## Pages
 
-- [Home](https://finsimlabs.com/): overview, interactive demo, pricing and contact.
+- [Home](https://finsimlabs.com/): overview, interactive product demo and contact details.
 
 ## Contact
 
