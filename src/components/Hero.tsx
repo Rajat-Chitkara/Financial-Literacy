@@ -37,7 +37,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="group bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
               >
-                Try the Demo
+                Try for Free
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
               <button
