@@ -85,7 +85,7 @@ export default function Header({ isMenuOpen, setIsMenuOpen }: HeaderProps) {
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
-              Try Demo
+              Try Free
             </a>
             <button
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
