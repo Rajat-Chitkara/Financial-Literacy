@@ -22,7 +22,7 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Make Financial Literacy
-              <span className="text-blue-600"> Fun for Students</span>
+              <span className="text-blue-600"> Fun </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
